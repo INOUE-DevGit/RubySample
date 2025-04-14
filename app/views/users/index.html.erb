@@ -1,6 +1,8 @@
+<%= stylesheet_link_tag 'application' %>
+<%= javascript_import_module_tag 'application' %>
 <!--
   コントローラーから受け取った値を表示する
   <%= %>のように=があると実行結果の戻り値を出力
   <% %>で囲むことと戻り値は出力せずRubyコードとして実行できる。 例：<% if @hello.present? %>Hlelo, world!<% end %>
 -->
-<div><%= @hello %></div>
+<div class='users-index'><%= @hello %></div>
