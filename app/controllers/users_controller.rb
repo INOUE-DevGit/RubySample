@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def index
-    render plain: "Hello, world!"
+    # ビューがviews/コントローラー名/ビュー名.html.erbならrenderは省略できる
+    render template: "users/index"
   end
 end
