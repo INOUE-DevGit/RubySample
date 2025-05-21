@@ -1,12 +1,23 @@
 <div id="<%= dom_id diary %>">
   <p>
-    <strong>Title:</strong>
-    <%= diary.title %>
+    <strong>ID:</strong>
+    <%= diary.id %>
   </p>
 
   <p>
-    <strong>Body:</strong>
-    <%= diary.body %>
+    <strong>タイトル:</strong>
+    <%= link_to diary.title, diary %>
   </p>
 
+  <p>
+    <strong>登録日時:</strong>
+    <%= diary.created_at %>
+  </p>
+
+    <p>
+    <strong>更新日時:</strong>
+    <%= diary.updated_at %>
+  </p>
 </div>
+
+<%= link_to '日記を新規作成', new_diary_path %>
